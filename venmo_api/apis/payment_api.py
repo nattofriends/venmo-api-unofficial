@@ -162,7 +162,7 @@ class PaymentApi(object):
         :return: <bool> Either the transaction was successful or an exception will rise.
         """
         return self.__send_or_request_money(
-            amount=flaot(amount / 100),
+            amount=float(amount / 100),
             note=note,
             is_send_money=False,
             funding_source_id=None,
